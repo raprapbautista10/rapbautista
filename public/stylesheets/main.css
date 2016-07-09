@@ -1,0 +1,14 @@
+/* line 1, ../sass/main.scss */
+body {
+  font-family: "Impact", fantacy !important;
+}
+
+/* line 5, ../sass/main.scss */
+nav a {
+  font-size: 24px;
+  color: #fff !important;
+}
+/* line 8, ../sass/main.scss */
+nav a:hover, nav a:active {
+  background-color: #000 !important;
+}

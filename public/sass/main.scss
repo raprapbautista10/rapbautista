@@ -1,0 +1,12 @@
+body{
+   font-family: "Impact", fantacy !important;
+}
+nav{
+    a{
+        font-size: 24px;
+        color: #fff !important;
+        &:hover{
+            background-color: #000 !important;
+        }
+    }
+}
