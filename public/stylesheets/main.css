@@ -9,6 +9,18 @@ nav a {
   color: #fff !important;
 }
 /* line 8, ../sass/main.scss */
-nav a:hover, nav a:active {
+nav a:hover {
   background-color: #000 !important;
+}
+
+/* line 14, ../sass/main.scss */
+.main_image {
+  border-radius: 100%;
+}
+
+/* line 17, ../sass/main.scss */
+.main_text {
+  margin-top: 20%;
+  position: absolute;
+  z-index: 9999;
 }
