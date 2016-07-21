@@ -2,110 +2,80 @@
 
 <html>
     <head>
-        <title>#{get 'title' /}</title>
-        <meta charset="${_response_encoding}">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rafael's Portfolio</title>
+        <meta name="description" content="Portfolio of Rafael C. Bautista Jr." />
+        <meta name="keywords" content="rafael, resume" />
+        <meta name="author" content="Rafael Bautista" />
         #{get 'moreStyles' /}
-        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/full-slider.css'}">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="@{'/public/javascripts/jquery.js'}"></script>
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/normalize.css'}">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/bootstrap.css'}">
+        <!-- Owl -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/owl.css'}">
+        <!-- Animate.css -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/animate.css'}">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/fonts/font-awesome-4.1.0/css/font-awesome.min.css'}">
+        <!-- Elegant Icons -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/fonts/eleganticons/et-icons.css'}">
+        <!-- Main style -->
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'}">
+        <script src="@{'/public/javascripts/js/jquery-1.11.1.min.js'}"></script>
+        <script src="@{'/public/javascripts/js/owl.carousel.min.js'}"></script>
+        <script src="@{'/public/javascripts/js/bootstrap.min.js'}"></script>
+        <script src="@{'/public/javascripts/js/wow.min.js'}"></script>
+        <script src="@{'/public/javascripts/js/typewriter.js'}"></script>
+        <script src="@{'/public/javascripts/js/jquery.onepagenav.js'}"></script>
+        <script src="@{'/public/javascripts/js/main.js'}"></script>
         #{get 'moreScripts' /}
     </head>
     <body>
-    <nav class="navbar navbar-fixed-top" role="navigation">
+    <nav class="navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="glyphicon glyphicon-align-justify"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"></a>
+                <a class="navbar-brand" href="#"><img src="/public/images/rb.png" data-active-url="/public/images/rb.png" alt=""></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                <ul class="nav navbar-nav navbar-right main-nav">
+                    <li><a href="#intro">Skills</a></li>
+                    <li><a href="#services">Education Background</a></li>
+                    <li><a href="#team">Work Experience</a></li>
+                    <li><a href="#pricing">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
     <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+        #{doLayout /}
+    <footer>
+        <div class="container">
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('public/images/banner1.jpg');">
-                    <div class="row ">
-                        <img class="col-xs-8 col-sm-4 col-md-4 col-md-offset-4 col-xs-offset-2 col-sm-offset-4 main_image" src="/public/images/resume.png">
-                    </div>
+            <div class="row bottom-footer text-center-mobile">
+                <div class="footer-color col-sm-8">
+                    <p>Copyright &copy; Rafael's Portfolio 2016 All Rights Reserved.  <Portfolio></Portfolio></p>
                 </div>
-                <div class="carousel-caption">
-                    <h1>Rafael Bautista</h1>
-                    <h1>Web Developer</h1>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('public/images/banner2.jpg');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('public/images/banner3.jpg');"></div>
-                <div class="carousel-caption">
+                <div class="col-sm-4 text-right text-center-mobile">
+                    <ul class="social-footer">
+                        <li><a href="https://www.facebook.com/khunrap10"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://plus.google.com/108424521952629103421"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-        #{doLayout /}
-    <div class="container">
-        <footer>
-            <div class="row footer">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Rafael Bautista Portfolio Website 2016</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-    </div>
-
+    </footer>
     </body>
-    <script>
-        $('.carousel').carousel({
-            interval: 10000 //changes the speed
-        })
-    </script>
 </html>
