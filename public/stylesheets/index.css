@@ -55,7 +55,7 @@ body {
 p {
   font-size: 18px;
   line-height: 1.5;
-  color: #fff;
+  color: #8a8e91;
 }
 
 /* line 55, ../sass/index.scss */
@@ -626,7 +626,7 @@ section {
 /* Pricing */
 /* line 548, ../sass/index.scss */
 #pricing {
-  background: #00a8ff url("/public/images/img/pricing1.jpg") no-repeat center center;
+  background: #7f8c8d;
   -webkit-background-size: cover;
   background-size: cover;
   -webkit-transition: background-image 0.6s linear 0.3s;
